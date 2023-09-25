@@ -1,0 +1,28 @@
+[project]
+name = 'lefthook-installer-test'
+version = '0.0.1'
+description = 'Simple git hooks manager'
+requires-python = '>=3.7'
+dependencies = [
+    'urllib3==2.0.5,<3'
+]
+
+[project.scripts]
+lefthook-install = 'lefthook_installer_test.install:cli'
+
+[project.urls]
+Homepage = 'https://github.com/evilmartians/lefthook'
+'Bug Tracker' = 'https://github.com/evilmartians/lefthook/issues'
+
+[tool.poetry]
+name = 'lefthook-installer-test'
+version = '0.0.1'
+description = 'Simple git hooks manager'
+authors = ['Edwin Kofler <edwin@kofler.dev>']
+
+[tool.poetry.scripts]
+lefthook-install = 'lefthook_installer_test.install:cli'
+
+[tool.poetry.dependencies]
+python = '>=3.7,<4'
+urllib3 = "^2.0.5"
